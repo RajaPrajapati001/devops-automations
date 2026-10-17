@@ -67,7 +67,7 @@ sudo bash openvpn-install.sh (Selected TCP & Port 1194 during configuration)
 
 Instead of running manual backups, I rely on automated shell and batch scripts (available in this repository).
 
-- db_backup.sh (Linux): Cron-automated script that dumps PostgreSQL microservice databases (auth, customer, restaurant), compresses them (-F c), and securely uploads them to AWS S3.
+- db_backup.sh (Linux): Cron-automated script that dumps PostgreSQL microservice databases, compresses them (-F c), and securely uploads them to AWS S3.
 - db_restore.sh (Linux): Pulls the latest target backup from AWS S3 and performs a clean --if-exists database restoration.
 - rds_backup.bat (Windows): A batch script utilizing Windows Task Scheduler to pull backups from remote AWS RDS instances into localized cold storage.
 
